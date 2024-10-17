@@ -10,7 +10,7 @@
         android:id="@+id/receiveAvatar"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/recieve_image"
+        android:src="@drawable/receive_message"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,10 +30,10 @@
         android:id="@+id/message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/receive_message_background"
+        android:background="@drawable/ic_launcher_background"
         android:padding="12dp"
         android:text="Received message"
-        android:textColor="@android:color/black"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@id/receiveAvatar"
         app:layout_constraintTop_toBottomOf="@id/timeDate" />
 </androidx.constraintlayout.widget.ConstraintLayout>
