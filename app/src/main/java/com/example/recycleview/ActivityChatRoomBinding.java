@@ -11,6 +11,7 @@ import com.example.recyclerview.R;
 
 public class ActivityChatRoomBinding {
 
+
     private static ViewGroup parent;
     // Views from the layout
     public RecyclerView recyclerView;  // RecyclerView to display chat messages
@@ -18,6 +19,11 @@ public class ActivityChatRoomBinding {
     public EditText editMessage;  // EditText to type messages
     public View receiveButton;
 
+    public static ActivityChatRoomBinding inflate(LayoutInflater inflater) {
+        // Inflate the layout and create an instance of the binding
+        View view = inflater.inflate(R.layout.activity_chat_room, parent, false);
+        return new ActivityChatRoomBinding(view);
+    }
     // Private constructor to prevent direct instantiation
     private ActivityChatRoomBinding(View root) {
         // Initialize views using the root view
@@ -28,11 +34,7 @@ public class ActivityChatRoomBinding {
     }
 
     // Static method to inflate the binding from the layout
-    public static ActivityChatRoomBinding inflate(LayoutInflater inflater) {
-        // Inflate the layout and create an instance of the binding
-        View view = inflater.inflate(R.layout.activity_chat_room, parent, false);
-        return new ActivityChatRoomBinding(view);
-    }
+
 
     // Method to return the root view of the layout
     public View getRoot() {

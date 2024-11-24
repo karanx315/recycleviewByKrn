@@ -5,14 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="8dp">
 
-    <!-- Avatar Image for received messages -->
-    <ImageView
-        android:id="@+id/receiveAvatar"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/receive_message"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
     <!-- Time and Date for the message -->
     <TextView
@@ -23,6 +16,15 @@
         android:textColor="@android:color/darker_gray"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@id/receiveAvatar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Avatar Image for received messages -->
+    <ImageView
+        android:id="@+id/receiveAvatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/receive_message"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Received message text -->

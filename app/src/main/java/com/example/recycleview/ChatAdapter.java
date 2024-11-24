@@ -48,18 +48,19 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MyRowHolder> {
         holder.timeText.setText(message.getTimeSent());
     }
 
-    // Returns the total number of messages
-    @Override
-    public int getItemCount() {
-        return messages.size();
-    }
 
-    // Determines the type of view for each item (sent or received message)
     @Override
     public int getItemViewType(int position) {
         ChatMessage message = messages.get(position);
         return message.isSentButton() ? 0 : 1;  // 0 for sent, 1 for received
     }
+
+    @Override
+    public int getItemCount() {
+        return messages.size();
+    }
+
+
 
     // Inner class that holds references to the views in each row
     public class MyRowHolder extends RecyclerView.ViewHolder {

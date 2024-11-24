@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight">
 
+
         <!-- Declare the ChatRoom activity with the correct package -->
         <activity android:name="com.example.recycleview.ChatRoom"
             android:exported="true"

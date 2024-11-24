@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ChatRoom">
 
-    <!-- RecyclerView to display chat messages -->
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="0dp"
@@ -16,7 +16,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- EditText for typing new messages -->
+
+    <Button
+        android:id="@+id/receiveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receive"
+        app:layout_constraintEnd_toStartOf="@id/sendButton"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
     <EditText
         android:id="@+id/editMessage"
         android:layout_width="0dp"
@@ -26,7 +36,6 @@
         app:layout_constraintEnd_toStartOf="@id/sendButton"
         app:layout_constraintBottom_toBottomOf="parent" />
 
-    <!-- Button to send the message -->
     <Button
         android:id="@+id/sendButton"
         android:layout_width="wrap_content"
@@ -34,13 +43,6 @@
         android:text="Send"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent" />
+    />
 
-    <Button
-        android:id="@+id/receiveButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Receive"
-        app:layout_constraintEnd_toStartOf="@id/sendButton"
-        app:layout_constraintBottom_toBottomOf="parent" />
-        />
 </androidx.constraintlayout.widget.ConstraintLayout>
